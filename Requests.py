@@ -16,7 +16,7 @@ def create_booking(name, surname):
     }
     response = requests.post(url=url, json=data)
     return response.json()
-
+# print(response.json())
 
 def get_booking_by_id(id_):
     url = f"https://restful-booker.herokuapp.com/booking/{id_}"
